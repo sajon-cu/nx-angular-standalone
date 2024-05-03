@@ -1,10 +1,11 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-nx-welcome',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   template: `
     <!--
      * * * * * * * * * * * * * * * * * * * * * * * * * * * *
@@ -474,8 +475,7 @@ import { CommonModule } from '@angular/common';
           <div id="learning-materials" class="rounded shadow">
             <h2>Learning materials</h2>
             <a
-              href="https://nx.dev/getting-started/intro?utm_source=nx-project"
-              target="_blank"
+              routerLink="products"
               rel="noreferrer"
               class="list-item-link"
             >
@@ -493,7 +493,7 @@ import { CommonModule } from '@angular/common';
                 />
               </svg>
               <span>
-                Documentation
+                Products
                 <span> Everything is in there </span>
               </span>
               <svg
@@ -510,7 +510,7 @@ import { CommonModule } from '@angular/common';
                 />
               </svg>
             </a>
-            <a
+            <!-- <a
               href="https://blog.nrwl.io/?utm_source=nx-project"
               target="_blank"
               rel="noreferrer"
@@ -659,7 +659,7 @@ import { CommonModule } from '@angular/common';
                   d="M9 5l7 7-7 7"
                 />
               </svg>
-            </a>
+            </a> -->
           </div>
           <div id="other-links">
             <a

@@ -3,5 +3,10 @@
     "nrwl.angular-console",
     "esbenp.prettier-vscode",
     "firsttris.vscode-jest-runner"
-  ]
+  ],
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": [
+    "source.fixAll.eslint"
+  ],
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "vue"]
 }
